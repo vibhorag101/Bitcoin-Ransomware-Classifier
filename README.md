@@ -5,7 +5,7 @@ We know that Bitcoin is one of the most popular cryptocurrency and might play a 
 However it is often used by scammers and hackers to demand ransom from an individual or a corporate or even governments in exchange for unlocking their system from a ransomware. It is often important to know the type of ransomware used so appropriate counter measures can be taken.
 Scammers often give us a bitcoin address due to its untracable nature. Our ML Model aims to `predict the ransomware given the Bitcoin Address` and other parameters. If the given bitcoin address in our training data is not related to any known ransomware we write ***"white"*** as the label there.
 ### Dataset and Publications Used
-- The data is obtained from the following   [`dataset`](https://archive.ics.uci.edu/ml/datasets/BitcoinHeistRansomwareAddressDataset).
+- The data is obtained from the following   [`dataset`](https://archive.ics.uci.edu/ml/datasets/BitcoinHeistRansomwareAddressDataset). It only considers the transactions above 0.3BTC as transactions less than this are usually not ransomware transactions.
 - This [ `paper`](https://appliednetsci.springeropen.com/articles/10.1007/s41109-020-00261-7) helped me understand the above dataset as the above dataset is based on this research paper.
 
 ### Goals of the Project
